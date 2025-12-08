@@ -7,4 +7,4 @@ Python Data Visualization
 Musical Analysis using Tableau
 
 
-Sales Data Analysis Region, Category Wise
+Sales Data Analysis Region, Category Wise using PowerBI
