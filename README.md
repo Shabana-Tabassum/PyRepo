@@ -4,7 +4,14 @@ Python Data Visualization
 
     GDP Analysis by UN_Regions
     
-Musical Analysis using Tableau
+Tableau Data Visualization
 
+Musical Analysis of Data from Spotify 
 
-Sales Data Analysis Region, Category Wise using PowerBI
+    An analysis of different Genre and Popular Tracks of Artists
+
+Power BI Data Visualization
+
+    Sales Data Analysis Region, Category Wise using Geographical Map on screen and Hierarchy features 
+
+    Visualize Data Monthly, Quarterly, Yearly
