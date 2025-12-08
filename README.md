@@ -6,7 +6,9 @@ Python Data Visualization
     
 Tableau Data Visualization
 
-    Musical Analysis of Data from Spotify - An analysis of different Genre and Popular Tracks of Artists
+    Musical Analysis of Data from Spotify - https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset
+
+    An analysis of different Genre and Popular Tracks of Artists
     https://public.tableau.com/app/profile/shabana.tab/viz/MusicalPerformanceHubDashboard/MusicalAnalysis-Live?publish=yes
 
     Global Health Insights - Data collected By NHS
