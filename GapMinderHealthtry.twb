@@ -1,0 +1,3286 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='GlobalHealthDashBoard' path='/workbooks' revision='1.6' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='GapminderHealth (GapminderHealth-Shabana)' inline='true' name='federated.0v0oudf1qc9u7g185787r1akx1zk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='GapminderHealth-Shabana' name='excel-direct.0hrdmgy1gs8z2p13yxoma00u17jn'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/mylogin/OneDrive - Back 2 Work Complete Training/GapminderHealth-Shabana.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0hrdmgy1gs8z2p13yxoma00u17jn' name='GapminderHealth' table='[GapminderHealth$]' type='table'>
+          <columns gridOrigin='A1:M6005:no:A1:M6005:0' header='yes' outcome='6'>
+            <column datatype='string' name='Continent' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='real' name='Life Expectancy' ordinal='3' />
+            <column datatype='string' name='Gender' ordinal='4' />
+            <column datatype='real' name='BMI' ordinal='5' />
+            <column datatype='integer' name='Blood Pressure' ordinal='6' />
+            <column datatype='real' name='Cholesterol' ordinal='7' />
+            <column datatype='real' name='Lung Cancer' ordinal='8' />
+            <column datatype='real' name='Liver Cancer' ordinal='9' />
+            <column datatype='real' name='Stomach Cancer' ordinal='10' />
+            <column datatype='integer' name='Population' ordinal='11' />
+            <column datatype='real' name='Population Growth' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M6005:no:A1:M6005:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Continent]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Life Expectancy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Life Expectancy]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Life Expectancy</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BMI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BMI]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>BMI</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Blood Pressure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Blood Pressure]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Blood Pressure</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cholesterol</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cholesterol]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Cholesterol</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lung Cancer</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lung Cancer]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Lung Cancer</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liver Cancer</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Liver Cancer]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Liver Cancer</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stomach Cancer</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Stomach Cancer]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Stomach Cancer</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population Growth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population Growth]</local-name>
+            <parent-name>[GapminderHealth]</parent-name>
+            <remote-alias>Population Growth</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Population]) / TOTAL(SUM([Population]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation2]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Population]) / TOTAL(SUM([Population]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation3]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Population]) / TOTAL(SUM([Population]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation4]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_1020909804495286273]) / TOTAL(SUM([Calculation_1020909804495286273]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Total cancer Cases' datatype='real' name='[Calculation_1020909804488785920]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Liver Cancer] + [Lung Cancer] + [Stomach Cancer]' />
+      </column>
+      <column caption='Total cases by population' datatype='real' name='[Calculation_1020909804495286273]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1020909804488785920]/[Population]' />
+      </column>
+      <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column datatype='real' name='[Liver Cancer]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Lung Cancer]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Stomach Cancer]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='GapminderHealth' datatype='table' name='[__tableau_internal_object_id__].[GapminderHealth_08628914A00C48419ED8524CFD1405E6]' role='measure' type='quantitative' />
+      <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1020909804488785920]' derivation='Sum' name='[sum:Calculation_1020909804488785920:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Liver Cancer]' derivation='Sum' name='[sum:Liver Cancer:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Lung Cancer]' derivation='Sum' name='[sum:Lung Cancer:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Stomach Cancer]' derivation='Sum' name='[sum:Stomach Cancer:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/mylogin/AppData/Local/Temp/TableauTemp/#TableauTemp_0ryo0nt1e34onl19f97mv0qhu83r.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/20/2025 07:51:34 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Continent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Continent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Continent</remote-alias>
+              <ordinal>0</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Life Expectancy</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Life Expectancy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Life Expectancy</remote-alias>
+              <ordinal>3</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>525</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>4</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BMI</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BMI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BMI</remote-alias>
+              <ordinal>5</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>123</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Blood Pressure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Blood Pressure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Blood Pressure</remote-alias>
+              <ordinal>6</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cholesterol</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Cholesterol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cholesterol</remote-alias>
+              <ordinal>7</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>226</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lung Cancer</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lung Cancer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lung Cancer</remote-alias>
+              <ordinal>8</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1850</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Liver Cancer</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Liver Cancer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Liver Cancer</remote-alias>
+              <ordinal>9</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1719</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stomach Cancer</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Stomach Cancer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stomach Cancer</remote-alias>
+              <ordinal>10</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1652</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>11</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6004</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population Growth</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Population Growth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population Growth</remote-alias>
+              <ordinal>12</ordinal>
+              <family>GapminderHealth</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4337</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GapminderHealth_08628914A00C48419ED8524CFD1405E6]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Continent:nk]' palette='sf_color_safe' type='palette'>
+            <map to='#529ee0'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+            <map to='#529ee0'>
+              <bucket>&quot;Europe&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Oceania&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Asia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Americas&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;men&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;women&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Liver Cancer:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Calculation_1020909804488785920:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0v0oudf1qc9u7g185787r1akx1zk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Stomach Cancer:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Lung Cancer:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Country:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Bhutan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Fiji&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lesotho&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Botswana&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Guinea-Bissau&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Maldives&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Namibia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Samoa&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Antigua and Barbuda&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Equatorial Guinea&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nicaragua&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Serbia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tunisia&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Central African Republic&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mauritania&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Trinidad and Tobago&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Burundi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Solomon Islands&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Eritrea&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Niger&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Seychelles&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Chad&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Guatemala&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Mozambique&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Yemen&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Guyana&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sao Tome and Principe&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Belize&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cuba&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Montenegro&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bahrain&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kiribati&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Madagascar&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sierra Leone&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Barbados&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Comoros&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mauritius&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Timor-Leste&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Costa Rica&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sudan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tajikistan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Vanuatu&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Benin&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gambia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Grenada&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Suriname&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Bosnia and Herzegovina&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Djibouti&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Papua New Guinea&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bahamas&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Liberia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Somalia&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Burkina Faso&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Malawi&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tonga&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Haiti&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Myanmar&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Togo&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Turkmenistan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Libya&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Angola&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Armenia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;El Salvador&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Senegal&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='GapminderHealth' id='GapminderHealth_08628914A00C48419ED8524CFD1405E6'>
+            <properties context=''>
+              <relation connection='excel-direct.0hrdmgy1gs8z2p13yxoma00u17jn' name='GapminderHealth' table='[GapminderHealth$]' type='table'>
+                <columns gridOrigin='A1:M6005:no:A1:M6005:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Continent' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='real' name='Life Expectancy' ordinal='3' />
+                  <column datatype='string' name='Gender' ordinal='4' />
+                  <column datatype='real' name='BMI' ordinal='5' />
+                  <column datatype='integer' name='Blood Pressure' ordinal='6' />
+                  <column datatype='real' name='Cholesterol' ordinal='7' />
+                  <column datatype='real' name='Lung Cancer' ordinal='8' />
+                  <column datatype='real' name='Liver Cancer' ordinal='9' />
+                  <column datatype='real' name='Stomach Cancer' ordinal='10' />
+                  <column datatype='integer' name='Population' ordinal='11' />
+                  <column datatype='real' name='Population Growth' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Life Expectancy Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Medium' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GapminderHealth (GapminderHealth-Shabana)' name='federated.0v0oudf1qc9u7g185787r1akx1zk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v0oudf1qc9u7g185787r1akx1zk'>
+            <column caption='Total cancer Cases' datatype='real' name='[Calculation_1020909804488785920]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Liver Cancer] + [Lung Cancer] + [Stomach Cancer]' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Life Expectancy]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Liver Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Lung Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Stomach Cancer]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Life Expectancy]' derivation='Avg' name='[avg:Life Expectancy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Continent:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' filter-group='5'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_1020909804488785920])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bangladesh&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' filter-group='6' included-values='in-range-or-null'>
+            <min>2007</min>
+            <max>2007</max>
+          </filter>
+          <slices>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]' value='n#,##0.00&quot;%&quot;;-#,##0.00&quot;%&quot;' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' />
+              <text column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]</rows>
+        <cols>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{185D1479-6894-4093-8088-5F9CA230ECFD}' />
+    </worksheet>
+    <worksheet name='Life Expectancy Vs Cholestrol'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Medium' fontsize='11'>Life Expectancy Vs Cholestrol</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GapminderHealth (GapminderHealth-Shabana)' name='federated.0v0oudf1qc9u7g185787r1akx1zk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v0oudf1qc9u7g185787r1akx1zk'>
+            <column caption='Total cancer Cases' datatype='real' name='[Calculation_1020909804488785920]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Liver Cancer] + [Lung Cancer] + [Stomach Cancer]' />
+            </column>
+            <column datatype='real' name='[Cholesterol]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Life Expectancy]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Liver Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Lung Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Stomach Cancer]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Cholesterol]' derivation='Avg' name='[avg:Cholesterol:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Life Expectancy]' derivation='Avg' name='[avg:Life Expectancy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Continent:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' filter-group='5'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_1020909804488785920])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bangladesh&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' filter-group='6' included-values='in-range-or-null'>
+            <min>2007</min>
+            <max>2007</max>
+          </filter>
+          <slices>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' />
+              <lod column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' />
+              <text column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' />
+              <text column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]</rows>
+        <cols>[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Cholesterol:qk]</cols>
+      </table>
+      <simple-id uuid='{D887B7A7-C2AB-4946-BDAC-95EA4578A7BA}' />
+    </worksheet>
+    <worksheet name='Life Expectancy by Continent'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='11'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GapminderHealth (GapminderHealth-Shabana)' name='federated.0v0oudf1qc9u7g185787r1akx1zk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v0oudf1qc9u7g185787r1akx1zk'>
+            <column caption='Total cancer Cases' datatype='real' name='[Calculation_1020909804488785920]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Liver Cancer] + [Lung Cancer] + [Stomach Cancer]' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Life Expectancy]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Liver Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Lung Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Stomach Cancer]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Life Expectancy]' derivation='Avg' name='[avg:Life Expectancy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Continent:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' filter-group='5'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_1020909804488785920])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bangladesh&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' filter-group='6' included-values='in-range-or-null'>
+            <min>2007</min>
+            <max>2007</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' value='65' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]' value='n#,##0.00&quot;%&quot;;-#,##0.00&quot;%&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]' />
+              <text column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]</rows>
+        <cols>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</cols>
+      </table>
+      <simple-id uuid='{C5AC435C-4AEA-4E6B-85FD-A4199AF39820}' />
+    </worksheet>
+    <worksheet name='Life Expectancy vs BMI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Medium' fontsize='11'>Life Expectancy Vs BMI</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GapminderHealth (GapminderHealth-Shabana)' name='federated.0v0oudf1qc9u7g185787r1akx1zk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v0oudf1qc9u7g185787r1akx1zk'>
+            <column datatype='real' name='[BMI]' role='measure' type='quantitative' />
+            <column caption='Total cancer Cases' datatype='real' name='[Calculation_1020909804488785920]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Liver Cancer] + [Lung Cancer] + [Stomach Cancer]' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Life Expectancy]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Liver Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Lung Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Stomach Cancer]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[BMI]' derivation='Avg' name='[avg:BMI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Life Expectancy]' derivation='Avg' name='[avg:Life Expectancy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Continent:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' filter-group='5'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_1020909804488785920])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bangladesh&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' filter-group='6' included-values='in-range-or-null'>
+            <min>2007</min>
+            <max>2007</max>
+          </filter>
+          <slices>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' />
+              <text column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' />
+              <text column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' />
+              <lod column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.88955801725387573' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]</rows>
+        <cols>[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:BMI:qk]</cols>
+      </table>
+      <simple-id uuid='{B74654DD-D846-497A-B205-01CEF1C9ADC1}' />
+    </worksheet>
+    <worksheet name='Population distribution by Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='11'>Population Distribution by Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GapminderHealth (GapminderHealth-Shabana)' name='federated.0v0oudf1qc9u7g185787r1akx1zk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v0oudf1qc9u7g185787r1akx1zk'>
+            <column caption='Total cancer Cases' datatype='real' name='[Calculation_1020909804488785920]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Liver Cancer] + [Lung Cancer] + [Stomach Cancer]' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Liver Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Lung Cancer]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Stomach Cancer]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Population]' derivation='Sum' name='[pcto:sum:Population:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Continent:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' filter-group='5'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_1020909804488785920])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bangladesh&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' filter-group='6' included-values='in-range-or-null'>
+            <min>2007</min>
+            <max>2007</max>
+          </filter>
+          <slices>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='vertical-align' field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]' value='top' />
+            <format attr='text-format' field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[pcto:sum:Population:qk]' value='p0.00%' />
+            <format attr='text-align' field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]' value='center' />
+            <format attr='text-align' field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]' value='auto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]' />
+              <text column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[pcto:sum:Population:qk]' />
+              <text column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]' />
+              <text column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0'>&#10;&lt;</run>
+                <run fontalignment='0'>[federated.0v0oudf1qc9u7g185787r1akx1zk].[pcto:sum:Population:qk]</run>
+                <run fontalignment='0'>&gt;</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0'><![CDATA[<[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]>]]></run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0'><![CDATA[<[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.58171272277832031' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{86A7EF8B-E9C6-4137-B8EA-32B687EF1C64}' />
+    </worksheet>
+    <worksheet name='Total Cancer Cases - Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GapminderHealth (GapminderHealth-Shabana)' name='federated.0v0oudf1qc9u7g185787r1akx1zk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v0oudf1qc9u7g185787r1akx1zk'>
+            <column caption='Total cancer Cases' datatype='real' name='[Calculation_1020909804488785920]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Liver Cancer] + [Lung Cancer] + [Stomach Cancer]' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Liver Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Lung Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Stomach Cancer]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1020909804488785920]' derivation='Sum' name='[sum:Calculation_1020909804488785920:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Liver Cancer]' derivation='Sum' name='[sum:Liver Cancer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Lung Cancer]' derivation='Sum' name='[sum:Lung Cancer:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Stomach Cancer]' derivation='Sum' name='[sum:Stomach Cancer:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:Continent:nk]' member='&quot;Africa&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' filter-group='7'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_1020909804488785920])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' filter-group='8' included-values='in-range-or-null'>
+            <min>2004</min>
+            <max>2008</max>
+          </filter>
+          <slices>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' />
+              <lod column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Calculation_1020909804488785920:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Liver Cancer:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' />
+              <lod column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Calculation_1020909804488785920:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Lung Cancer:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' />
+              <lod column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Calculation_1020909804488785920:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Stomach Cancer:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' />
+              <lod column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Calculation_1020909804488785920:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Liver Cancer:qk] + ([federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Lung Cancer:qk] + [federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Stomach Cancer:qk]))</rows>
+        <cols>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</cols>
+      </table>
+      <simple-id uuid='{0393B9B6-64C3-4EB9-8F86-6E35CE5DD2B8}' />
+    </worksheet>
+    <worksheet name='Total Cases by Population'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GapminderHealth (GapminderHealth-Shabana)' name='federated.0v0oudf1qc9u7g185787r1akx1zk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v0oudf1qc9u7g185787r1akx1zk'>
+            <column caption='Total cancer Cases' datatype='real' name='[Calculation_1020909804488785920]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Liver Cancer] + [Lung Cancer] + [Stomach Cancer]' />
+            </column>
+            <column caption='Total cases by population' datatype='real' name='[Calculation_1020909804495286273]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1020909804488785920]/[Population]' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Liver Cancer]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Lung Cancer]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Stomach Cancer]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1020909804495286273]' derivation='Sum' name='[pcto:sum:Calculation_1020909804495286273:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:Continent:nk]' member='&quot;Africa&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' filter-group='7'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_1020909804488785920])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Poland&quot;</bucket>
+              <bucket>&quot;Italy&quot;</bucket>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+              <bucket>&quot;Germany&quot;</bucket>
+              <bucket>&quot;Spain&quot;</bucket>
+              <bucket>&quot;Ukraine&quot;</bucket>
+              <bucket>&quot;France&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' filter-group='8' included-values='in-range-or-null'>
+            <min>2004</min>
+            <max>2008</max>
+          </filter>
+          <slices>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</column>
+            <column>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[pcto:sum:Calculation_1020909804495286273:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' />
+              <text column='[federated.0v0oudf1qc9u7g185787r1akx1zk].[sum:Population:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v0oudf1qc9u7g185787r1akx1zk].[pcto:sum:Calculation_1020909804495286273:qk]</rows>
+        <cols>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</cols>
+      </table>
+      <simple-id uuid='{58110F59-7427-48E8-A947-0733EC8177BF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Cancer Analysis by Country'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <datasources>
+        <datasource caption='GapminderHealth (GapminderHealth-Shabana)' name='federated.0v0oudf1qc9u7g185787r1akx1zk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0v0oudf1qc9u7g185787r1akx1zk'>
+        <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='8105' id='5' name='Total Cancer Cases - Country' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='24615' x='72308' y='1621' />
+        <zone h='6608' id='8' mode='dropdown' name='Total Cancer Cases - Country' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' type-v2='filter' w='24615' x='71692' y='13466' />
+        <zone h='48628' id='11' name='Total Cancer Cases - Country' w='69231' x='1385' y='3117' />
+        <zone h='10599' id='13' name='Total Cancer Cases - Country' pane-specification-id='1' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' type-v2='color' w='21538' x='75692' y='30923' />
+        <zone h='46509' id='14' name='Total Cases by Population' w='73077' x='1077' y='52494' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98004' id='15' param='vert' type-v2='layout-flow' w='97538' x='1231' y='998'>
+                <zone h='8105' id='5' name='Total Cancer Cases - Country' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='24615' x='72308' y='1621'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6608' id='8' mode='dropdown' name='Total Cancer Cases - Country' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' type-v2='filter' w='24615' x='71692' y='13466'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48628' id='11' is-fixed='true' name='Total Cancer Cases - Country' w='69231' x='1385' y='3117'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10599' id='13' name='Total Cancer Cases - Country' pane-specification-id='1' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' type-v2='color' w='21538' x='75692' y='30923'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46509' id='14' is-fixed='true' name='Total Cases by Population' w='73077' x='1077' y='52494'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E2527D86-4D92-4E6F-B345-13A3632633D8}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Global Health Insights'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <datasources>
+        <datasource caption='GapminderHealth (GapminderHealth-Shabana)' name='federated.0v0oudf1qc9u7g185787r1akx1zk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0v0oudf1qc9u7g185787r1akx1zk'>
+        <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98004' id='31' param='vert' type-v2='layout-flow' w='97538' x='1231' y='998'>
+            <zone h='6235' id='32' type-v2='title' w='97538' x='1231' y='998'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91769' id='29' param='vert' type-v2='layout-flow' w='97538' x='1231' y='7233'>
+              <zone h='91769' id='5' param='horz' type-v2='layout-flow' w='97538' x='1231' y='7233'>
+                <zone h='91769' id='3' type-v2='layout-basic' w='80923' x='1231' y='7233'>
+                  <zone h='45883' id='1' name='Life Expectancy by Continent' w='40458' x='1231' y='7233'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45883' id='7' name='Life Expectancy Trend' w='40465' x='41689' y='7233'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45886' id='12' name='Life Expectancy vs BMI' w='29551' x='24564' y='53116'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45886' id='16' name='Population distribution by Gender' w='23333' x='1231' y='53116'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45886' id='21' name='Life Expectancy Vs Cholestrol' w='28039' x='54115' y='53116'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='108' h='91769' id='4' is-fixed='true' param='vert' type-v2='layout-flow' w='16615' x='82154' y='7233'>
+                  <zone h='19078' id='8' mode='dropdown' name='Life Expectancy Trend' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' type-v2='filter' w='16615' x='82154' y='7233'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6360' id='9' name='Life Expectancy Trend' pane-specification-id='0' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' type-v2='color' w='16615' x='82154' y='26311'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='78' h='10724' id='14' is-fixed='true' name='Life Expectancy vs BMI' pane-specification-id='2' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' type-v2='color' w='16615' x='82154' y='32671'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='9103' id='17' name='Population distribution by Gender' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16615' x='82154' y='43395'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='8978' id='18' name='Population distribution by Gender' pane-specification-id='0' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]' type-v2='color' w='16615' x='82154' y='52498'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1850' minheight='1850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98004' id='35' param='vert' type-v2='layout-flow' w='97538' x='1231' y='998'>
+                <zone h='6235' id='32' type-v2='title' w='97538' x='1231' y='998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45883' id='1' is-fixed='true' name='Life Expectancy by Continent' w='40458' x='1231' y='7233'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19078' id='8' mode='dropdown' name='Life Expectancy Trend' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' type-v2='filter' w='16615' x='82154' y='7233'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45883' id='7' is-fixed='true' name='Life Expectancy Trend' w='40465' x='41689' y='7233'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6360' id='9' name='Life Expectancy Trend' pane-specification-id='0' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' type-v2='color' w='16615' x='82154' y='26311'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9103' id='17' name='Population distribution by Gender' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16615' x='82154' y='43395'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45886' id='16' is-fixed='true' name='Population distribution by Gender' w='23333' x='1231' y='53116'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8978' id='18' name='Population distribution by Gender' pane-specification-id='0' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]' type-v2='color' w='16615' x='82154' y='52498'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45886' id='12' is-fixed='true' name='Life Expectancy vs BMI' w='29551' x='24564' y='53116'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='78' h='10724' id='14' name='Life Expectancy vs BMI' pane-specification-id='2' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' type-v2='color' w='16615' x='82154' y='32671'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45886' id='21' is-fixed='true' name='Life Expectancy Vs Cholestrol' w='28039' x='54115' y='53116'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3093D6C4-6567-4C10-8E72-5F01E5618637}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Life Expectancy by Continent'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{574697AB-8C3C-4DBF-910E-4981DB21F15B}' />
+    </window>
+    <window class='worksheet' name='Life Expectancy Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EB984A7E-33A8-487C-AE0D-0B1E383002D5}' />
+    </window>
+    <window class='worksheet' name='Population distribution by Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{05912FB6-317E-446D-8724-DF4B473FB24E}' />
+    </window>
+    <window class='worksheet' name='Life Expectancy vs BMI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{104B3614-2095-4738-B527-899360641296}' />
+    </window>
+    <window class='worksheet' name='Life Expectancy Vs Cholestrol'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[:Measure Names]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[avg:Life Expectancy:qk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7509D78E-F9D1-4E62-8D7B-B58D7071856F}' />
+    </window>
+    <window class='dashboard' name='Global Health Insights'>
+      <viewpoints>
+        <viewpoint name='Life Expectancy Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Life Expectancy Vs Cholestrol'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Life Expectancy by Continent'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Life Expectancy vs BMI'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Population distribution by Gender'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Gender:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{02417369-08B7-4D6D-AEAF-281D543A8065}' />
+    </window>
+    <window class='worksheet' name='Total Cancer Cases - Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' type='filter' />
+            <card param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='1' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B95778A2-1B32-42D2-BCB1-4F008A7CB1BE}' />
+    </window>
+    <window class='worksheet' name='Total Cases by Population'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]' type='filter' />
+            <card pane-specification-id='3' param='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Continent:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]</field>
+            <field>[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{736225F4-4F5A-4038-B854-6979647B5079}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Cancer Analysis by Country'>
+      <viewpoints>
+        <viewpoint name='Total Cancer Cases - Country'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0v0oudf1qc9u7g185787r1akx1zk].[none:Country:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Total Cases by Population'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{219A5112-5B93-44CE-83B3-22385FB9A8E2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Cancer Analysis by Country' width='192'>
+      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
+      /X/E1uBEutFjIgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Global Health Insights' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nOy9d3hc13ng/bvTBzMDDNqg995ZwN5FdcmSXOUSuSpxnHiTzZdkk29TN99+
+      m+zGSezYsRO3WJKtYlmFIk2KoljFCpLovfeOwcxg+tyyf4ANJgkSJEiQxPyeBw8559577nvu
+      Pe897X3fIyiKohAmzDJEEARBtdRChAmzlIQVIMyyJqwAYZY1YQUIs6wJK0CYZc31FUBRmBwf
+      YWzCzsWJItfkMGMO73Uv6ezsvKmb2kf6sbuDc+4lSdIVP2UkWb6pvC5cQU9nF9I1jowNdOIK
+      XGeiS1GQpIXcB/xeL9J1582CdHb2Lyi/MEvLNRXAPzPB9/7lnzh0vIqTRw/wszd+DcBQ61ka
+      eu3XzWz//n03ddOO2uN0jHkuJ7hH+M5Lb1/66Rpu4s19VTeV1ywKh/btJwgEPFOcOFN36UjD
+      yfcZnrlOjQ1O8OOfv7eA+0DNiaPMhK531Mv+fR9dfc2pQ0z7F3SbMHcJzVUpisLet37Jzudf
+      pCjFeiHp6grknh7n0JFjGGNS2LZpHTqNCkUMcvbEYYYdQbZt347VpMdlH+P8ufN4ZD2bt2zC
+      ajJcQwyFYPByrVJkiZAoAuCbmeLosRNoLDa2blyLTi0w2NtOTV0TUUnZbKgsR6u+eKVEXdUJ
+      Dp7qQa34yS4sBcAxMcK+U2eJsGWxdV0FwhVlDYZm7zM12o9f1lB/voqI+Cy2rK9AkIKcO3WC
+      4ekAq9etI9UWTWZBCSbd7OX20QFOVp0nJjGdvNwc4mNAloLUVh2na8jOtp2PoPZPcfjgAfL9
+      ESTFWlldXsBgdytVta1kFZRSXpSLWnVJojB3mataAAXod4QoSLYS9M7Q2dlJ3+DonHPk4Aw/
+      +ukvKF+ziWRTkJff3AvMKoUxPpOKvCT+44c/QwbGRkZIzy+jJDuBn7706nUFcTun6OzspLOz
+      k57+IWRAkUO88tIr5FesJdHg5e19H4EiMzoxzco169G5e9n14bkrchGIjY/HEhlFUlIiEfpZ
+      /a6trad01ToGaw/SMea75v3PH97FnmN1lK5ax0jjETrHfZw98DbjxFK5opCx4REAjuzazQzg
+      Gu3gJ6/toWRFJWZfH/tONQMw0NmKZIhlbXkOr73+NnqjmahIM7aEJGxx0fimh3h7/2nWrV9H
+      0DNNaIFdsDCLyzW7QJKiIAgQCnjo6+vjJy+9NOf4WHcD6eXbyExNoqRyK+JUHyJgiU+lND+L
+      zPxycqKCjHshKSWZ7tZGOvpGmJgYv64gXpeDvr4++vr6GBwaRQGCjl5mVDa0SoioxAxGulqQ
+      BBWJsZE01Ncz7ZEYGeyeU5zE5CSio+PIyMjAbNQDsP2Rx0hLSSIj2YbHH7zm/QF2PPIEaSlJ
+      5Gak4vMHiY6LpbulnjGHn5Li/Dnnnv/oBM+88CWy0lPJykjjYhuZUVDO6vIiUjLz0UguIixW
+      Yq2RJKdmkJacgFpnRPbaae3oJbegGP3l5ivMEnCVAghArFZm1BXAFJ3Izp07SYw2zT1HUKEo
+      8qUrrtXDDoQUtOoQL/3nqxSuXMP27dtJirFcVxBbWg47d+5k586dbNmwGvWFvP1eD06nE6fL
+      x9PPPEnQ3sOvDpxn3cZNbN2yEYP2Vot+Y/JWP8wXP/kowekhvv+Tn885ptGq8PmuOxi4LjpT
+      LL//zW+QGhvBqz/+Pn2T159UCHPnuXoMIAg89fRj/Oj73+Pxp55EJ3mYcAXmnGLLKmVwz3/Q
+      VZjMzGADuvgcNIDPMUF7Zw/2gRZcxlRi9BAKBVAkiZqTR+gedSxIOJ01g3itA4+oJtYQomdo
+      hNTIWIIhiZDPxfGjB/EEdXOvMUQyNdJJd28vUda4hT6POdSfOwHmJDKysjjV0DPnWOXWHfzL
+      D37AQEUJY131aHMfum4+8bGxnDt/lkBWAvEmhdONQ6wsyyM+KoJguAu0pAjXM4bzOCapa2hC
+      0RgpLi0j2mLE65wioDYTbdbjd09z/Pgp9NHJbFxTgVolMNLfRXffEPrIOFaWFaFWCTgnhzlX
+      20xqTiFmvYqU5GRc9nEwxhBpvKB/YoD+CSfpSbYLP91MzUgkxEUR8ruprakliJ6yinIijTp6
+      2xvpGrZTUlqGIoskJcQzOjSCLSUZFTA22EVTxyDlq9agDjrQW5OI0Ao4p8ZQm2IxGy7cVw4y
+      NOYkJSme6fEh9NEpRGhhZnoSwWjFqApy/tx5ZgIyKyrXEmsxMj40THRKMhpFQZFCTNidKJMt
+      HB228PzDZQwP2UlOsaEoMiMjoyQnJyOLQWrOnkE0xrG2ooC+9iY6+kdJyymmIDuF8BB4aRAE
+      QbiuAoSZH/tAO7/aexhJknD7Qnzl679HnPkO9sfCLDphBbgtFBRldopYEAQEIfwdv98QBEG4
+      egwQ5iYREATCFf8+J2wLFGZZE1aAMMuasAKEWdaExwBhloTu+pMcqe1h9bot5CRaEFU6IrQq
+      1Do9wWAIRQri84vo5GlONU2zbUMJoigjyjIWs4lgIIDBcC27soVxkwqg4HE5QGfCZNDd+PQ7
+      TCDgR6szcP/akCm43R5MZjNuhx210UKE/n6cQlXweb3oDBELNug729jLl7/4BfBN8vKbH6BV
+      hbDqNaza+TAfnajHN96BWoS81Xk0NY+Rabazt2aKVItE2aoV9IyKPL614rZLcM0uUO2hPdT2
+      TgIyxw8fwuez8/3v/xS7y4cYCiJesN33O0b4q7/4c37wgx/Q1DOKLMsosowsy0jSrEWnAkhi
+      iJAozf5fEhFFiZaqj+gac6AoCmIohCTJKIqMLF22BL14rizLKCgX/oUP3vsldk8IWb6Qplz8
+      Fzz2Ib79z//Ej3/yCjMhhVAwiHhl3iERWfazb+9BZFnmw0OHZo/Js8cUQLwor6JcSpeCXt7/
+      8OAC/RTm8uuf/yunWscAkTdf/xXTI2385f/4B0am3AQDfkLi7HMNjLXwuRe+yl/8xV9Q0zmK
+      KEpIoogkSYihEIELlrOhYOCSNWsoGCAQDPLhOy9T2zWOosgE/LN5ypKEKIYIBIMoinLh3NBs
+      eRXlwvP28u2//Ss+97nP879/8AqiKCKKIrKiEPD7ESX5Uj7BYGjWkjYY5D++/fcM2K9tYDgf
+      iVE6Gjp6mRwfQ2uOI9KgQZRFxsfG8AdFrHEpFGQkExmfiC0+Hr1GxeaHn+Tpx7fy85feYnVl
+      6S2/hyu5ZgsQ9PtAkgAVjmkHva01jDj8uMa7+fXb50Cj44tfegFBlolOSGfHjodIsGp49fVf
+      EWVUsaIsl7c+OIc66OZjn/kMB959l6Cs4hPPP8vuX+0iOa+EybqDeJpH+fQTGzh67BSDkx4+
+      vT2fd4534p8e47e+9Fvsevs9MorKcA718NwnnmbP/pN88rkn8Lsd7N/zDu6giuSIEJufeI4P
+      9+3jk5/8BKePfMjDn/4apWlWxrrqeemDUwgqPY9vKuT9k224nVM8/eQ2Pti/n+TsHFwOB6Pt
+      53j7aAte5wSf/63PsmfXXmRBwyceW8NL751G5Z5ix5MPs3//fmzJmawqzrmlh+3zzBAISYCW
+      wbEB6k6JTDrdDLad42eHTyFojfy///1PEaQQGks827ZtI84Q4B/+zz9i1GrYuraQNw5U43fY
+      +YM//Do/f+lVJEHH73z1U3z3ez+hfM16Gg5/gNDsxPzsJnYfOMzwtMjntuXx6sF6Jocm+bv/
+      //f57nf+k/J1WxhsruXLL3yM1w/38kdffY5v/tl/Y/Cv/xd//I3f4qV/+Tu6RkUeemQDx05U
+      o7HY2JmrZ8/5ASZHnfzxf3mOH73ya6ZGh3j2FlaStj7+LA31dYipuWwqEwhoCkmP1dPaPczD
+      WyvRCQo6FWgtkVAQwpySTIwpgpDXS8mqlcRHLI4R4Q0HwS6Hg8z8fHIKy5Emu1HMNiI04PbP
+      foUkUSQQCIDGRJLGQa/PiEUdIqNoLU9sLKDqo6OMi0YSrFoaz1aRtnonTz+8hfzcQjbu2AE+
+      F6Is4BgdxuP3ULRmO6XZsbTWnyd/41M8sX0jJSkRvP3efqJT8xAAjcHME89+Bp3PTnF+Mnv3
+      vIc6Mg2VALKioFLNFquxrpEnPvUFSpIN9A1Pkr96G2XZScSkZJObW0hFYSZOp5NQwEPBqq2s
+      yE2ko6Eav8aKVadm2uUko3gNG0oziLBlkl9QeMuV/6rnOuOibMUKVqzbBlNdYIrBpAni9Mx+
+      0VUqDXq9HmNkAukGF/7ILEyqECXrHmV7WQpHjxxhRjYSa9Jw4ugRyh/6NF/87KdYVVHAM5/4
+      NILoRlbrmRwdwOvxsuahZylMMNNYc4ZVj32OFz71NKXpkXz3h6+xZsOGq+Rzz8zwma//AVMd
+      NVjikpG9Ljw+L9s+9nnSI9VUV53iYy98k9KcxFsqv6DWUr6ykuR4K5l5xRRkpWCMjGPlinKS
+      42OIi4slMiYWo1ZLUXkFsbHxWAwaNPoInnnq8dt69ldyTQXQGTQc3vMWh07VYYyIQBDUmCIM
+      ZBevRHJNYImOxahVI6hUeJ0TVFefZ3Cgl1EhiXS1nfGZILVnDrP3VCdbHtpBlOBBE2GloGI1
+      vWc/4L0Dx0jKSOb4/n30Dw3hDSmYTCY0Wj16rRqDIYLs4lW0Ht/NnoMnKN20kzMfnWJtxWzl
+      02vV7HvnFxCdQnbpehpPHmfTppUAbNy+kwNv/ievvPI6GcVFHNzzLs2DbtISrBi0GgxGI2qV
+      AVVonPNNXURERKC+cF+9wUhGQTlq/zQGazSWCCNGvRadwYhOp0ftd3Cmof2WH7YxwsS7L3+P
+      vcdqiIqMQqXWYTYZKV69gaB9CJ05GoNOjaDWEnKPc/ToUTraGrEbctBPNDHuDnL8/Tc53TPD
+      E48/hlFyIGtMrNu+k9Zjb/PT1/eQk5fPW6+9THdvL3aXD2u0FZ0xAqNeiyUyktJ122j88A1e
+      evN9tj3yCB1DXtYXJswKKAhERkUCYImJxxZrpXLDZiYHe7DEJ2I2mtBr1ViiIilesZJ3X/o3
+      +u2BO+7QoyjKJacsoymSCIMWrki73rk3w4JNIeQLfeCLX9lr4eyr5Xi/hic2laBSCbN9bAXU
+      qlkzakWZvV6SJFQqFbIso1KrrzIKU2QZBYHW2hO0j8s89/jWS8ckWUIlqOhtqeFM+ziffe7y
+      V+HK+4nBIIJGe9VLUi6MJ65Vjusdm++a2+Vmnmv76b2cd8bz/COVs89VlpG58FwvyiYISLJ8
+      6bmq1Vd3FZQLY6oDb72M01LAZx7fOL9skgQqFarfWPWWJOma+d8UssSZM6fQqtSkFK8mwXL9
+      yZXx/k5CpiRSYq8wy/fZaZkQKUq3zTnXP9bGqD6PTOuN39EdswVSZAlJAc2tPpzfIBQMotZq
+      r3oBAGIoiKC+uoI/iMiSiKQIaDWL8VwVgoEgWp1uacw5ZJFf791DjNlMcul6HH2NuEJ6LJog
+      IdGDMTqP6dEuJjwh1hckEzQn4ejvwCVpSYlUY7dPIsdm4R/qRhVhIcqg4JUNFMbJHOuVidQp
+      bN+4Zl4R7lhoREGlXrTKD6DV6a5Z+QE0Wt2yqPwAKrVmkSo/gIBOr19SW6bkjFyKchIZ6O3B
+      LxvwzbhQNAbWrF+Jd2ySyLgUIiNmp4dF1xhuwYzHM8O0O0TlyjK0ygxTLhmjQUdiUhqK382M
+      L0hB6SqiTDc3rRxeCAuzNAgqVEEPbaMayovy6G7rIC0zgzirGTCSVZCFwz6I3ekhcmUZJlS4
+      XL1Ep6eTYBKobRskMSMPswJBVQSyHMJojsKaaMNsEBBTUm5OjLA59L3BbfWnH0AUWaKtuR59
+      dApZKbYbX3AL3PP+AIqi0FJ7mr5pmcd2bLyqG+SfcRBQGwkGfcRbrfPmNTE+TpzNds96X4UV
+      4O5zz/sD+Ke6qen18eyj6+lvreF8Uy+rNm2j6cxBZuQI0tR2qmesPPHoRlyNZ2npGSQuvRRp
+      uheXqKcw1UxT5wDmmFROH3iPR5//MqsKs5a6WGHuIe5pa1DR58ESa8NsiuBsQwfPPbGBM6fO
+      gdGKRvKQnJpB5Zo1uIN+JibGWbt9E13nznH6fAMjnW20j0ywatNWRgcGyS0opjxc+S8Rmj6L
+      6GpeajGWnHtaAcwpRWimWthz4CiFmUm8t/8kpeUlxMfFkpCQSExyKj1NtRg0Oqwx8eg0OlKz
+      sijJzyY9JxdbTBx6rYbERBuJcSYaWntufNNlgjjTjOTpWGoxlpxFHwNczG6xpteuEk8Q5vTj
+      Z4/PuifOJ8Niy7XY3O0xwGxcp+Xty3xH1gEWuhR9Iy46nF/6u+bxa19zo7QHjfHxcXp7ey+t
+      Kl8PURRxOl1znkcwGMTj8Vx1rsfjIRRaeACw+4V7ehAcZmHU1dWRk5PDsWPHsNlsCIJAamoq
+      LS0tZGRkIAgCHR0d5Ofn09TUhE6nIzc3F71ez7Fjx8jMzESWZWJiYtBoNAwMDGAwGJiYmKCg
+      oIDU1NSlLuKiE1aAB4ipqSncbjeZmZlIkkRVVRV5eXnk5eXR3NyM2+0mPT2dsbExZFlGq9Vy
+      6NAhrFYrlZWVtLe3Mzk5STAYxGq1kpKSgizLZGdn09ra+kAqwD09CL6SyclJzp49iyRJnDt3
+      DodjNsyiJEnU19ejKAp9fX309vbi8/no6upClmXcbvcSS373UKlUREZGMj4+Tl1dHSqVCo1G
+      g8ViQa1WoygK9fX1AIRCIYaGhlCr1QQCARoaGtBoNExNTWGz2cjKyqKqqgq/34/FYkGrvR89
+      1m7Mog+Cb8aq8Vby3LVrFzt27KCjowOr1UpzczPPPPMMp06dwmq1Mjk5id/vRxAElAs+AXFx
+      caSlpREbG7tostwpFmMQLEmz3nMajYZAIIBGo0GlUl16JtXV1XR3d/PYY49hsVgIBALodLNW
+      mKFQCL1eTygUujReEkURvX42wrZyhZ/Fg8IdWQm+EwoQCAT44Q9/SEZGBikpKXR1dWGxWHj8
+      8cfp6OigtbUVu93OqlWrUKvVOJ1OHA4HPp8PlUrFk08+eelFLiViwMvolIukxAQck2MYI2Nn
+      bdsJrwQvBffNRtk6nY7ExERkWcZutxMTE4PX66W7u5vo6GiMRiMbN26kra2NpqYmKisrsVqt
+      ZGZmEggE5uw/tnQotLZ1YDFH4J0cZNKr0NXRcc3Q8mHuHvdFC3Ax34vNeygUQqPRXGraRVFE
+      q9VequgXv6QXneXvjS+rj6MfniM+MQpJVJNZUshEdxep+XmoLwQReNC6GL+JIAj3yLuY5Z63
+      BboSlUp1qYJcOSATBOHS7998uPfWA9cTHRuBWqXCFKWno60dQZLJEgSECzLeO7IuH+56C/CF
+      v/4ZjV3Di3nLO8b+f/0mibGRi5afLEuIkoxWo0ESQwhqDeoLzyk8Brj7LEkLIEqzleBBpv7s
+      R9gDWlatWklkxOXBt0qlRqeareQa7dIHGAtzH60D3E9kZGUz2FbDyy+/wonzYYvLe5l5WwBF
+      kQkEQxjugSnE+4mhoVGe+uxXMKrB7w/c+IIwS8b8LYAsc/ajg7z77nvUtnRz7/qO3VsMjk0Q
+      FaHj8OFDWK1RSy1OmHm4YRfI5/MSCIn4Jntp6h690elhgLQYE6+99jqG6AfPduZB4waDYIWc
+      0jVkp8UzOOYhLSX+UvpgTxchjZnkGCOdvUOkZeUSGREe2AG0dXVhMceg04aHWPc6874hWQxS
+      U1PD6FAP9S2Xvam89lGckhZbnJX+gWHy8rIZGhiY4wdw0S/gN//uL65dhhuVRa0ouNyecP//
+      PmBeBVBpDViY4aVffkDhFUFhAz4fwZBEV3MTflmFRqtBdaFSXAyNfr2/+0kHJOn6ZZlPAbY+
+      8gTFBfmkJt2ZcB5hFo95u0ByyM8MFr74hZ1YrJfjMkYlJKOd7kIwmrFFR9DS3Io1PnXO4tf1
+      FsLuJ6cstVqNRrPwpZJjx44RFLToxiYoyE67A5KFWSzmfbsqjRZNyMXRo0epWLeN4uzkC+kG
+      SkqKgVlzg7jE1Afe3XAhFJWswDU9yoTvwbShf5CYf5QmqDBHGJGkEAFxbpN/pY9tuPJfRpFl
+      Jp0OylZtwKB6cH1pHxTmbQGkoI8QkJiexVh/L+TfXLzF5Yxrcojq8+dxO11EJ6QvtThhbsC8
+      LYBaF8Hq9TtIjzVRXFp0t2S6r4mypVGYn8dDOx/CPtq31OKEuQHzKkBfWx2/encXoxNj1Nbd
+      +s4oy43YCDW7d+9BFRG31KKEuQHzdoES07IpKQ6ysjQPb+i+cR1YYhRCooQnqMamCq8D3OvM
+      2wJotRqmp+0guTl7vuluyXTfMzXtIOiaoG94cqlFCXMDbjAGMJEVa2DPh+dZt2HV3ZLpPkeg
+      cvUqjBFGNm7ZMueIoiiMj40hKwpDfd043P4lkjHMReZVADHoprW3j/joOM6fPnu3ZLrvOXL8
+      NFt3bOH44Q/npLsmh6lv6sQ51kfIEMNgTxcPtmvQvc+8HXu1Rk+UKYKejhbWP/bs3ZLpvic+
+      0sihQ0dx2O2cqm1lw4pCFNFPY3s/Ro3M+JSP5Pw05GkNkqKgXDAfuf9spRbGveWjPcsNRrYq
+      FBlMVgtmk+HuSPQAEG1LJq0gjv5RJxtWFM4mqnWsXr2SrvZ2UlJjaWtuQaPRolmmTvGyFOCD
+      PbshMo3Htq8FrrOgqsh0dvWQm7s4G5T/JvPbAkkBvBjYvqWAI0eOkfjxJzDqw8v7N0Ilunnj
+      jaNsfvy5S2mCoMJgMFBSXg7AyrK4a0a7Xi4M1H2EMXsDW0uTOXlwL0NTM1SuLGXQZ0Ka6sFI
+      iBGHnaj4LI4e3M8XvvwVqg/vJyLSSmrZJtwjnWzetvW2fXrntwZV60mNi6S9c5i4GCMub/A2
+      b/fgMzEyQmJOKS9+4/eI01+/h38xZOHyRUBQzcZ1Gpry8PC6QhqbW5l0eBgfH2dmJsTWLWtw
+      +gWKi4rJy4hHiIjn6WefounEHtyiblEc2m+Qh8LUxBi9AwOk5ZWREH3ZIlRRZLxeH4osMT09
+      jfyA919vlvrTp+jtbeHQyfPU1Yenjq9H+oqtBHqrOHqqhuLcVI43DLNx61aYaCfCmkB6dhYG
+      o5Wc9CQyEqLo6J+ipKQQQW3ErIaKtasXRY75neIBrcFMXkw88m8E8Rvt66R7wk9atA5Fa2B8
+      2kNBdtgFsGhlKc2d/cRoIbq4dKnFuWcRVFoeeepyF7H0Qn3+xKc+Mee88gKg4LJNVcjnIr1i
+      MymWxemKz6sA56vrycpKJz4tlc6WcchKAsDrnKBn1EkwEMAdEUdhTiodbT2XwhdedIy5FvdT
+      QyGKIqIoXvPYlZHqriQ5M59YWxJD4w7iYubfunU5oygyIfupOWna6LUIqvkrttYYyeqK4gt5
+      3P5WWPMqQHP1CewzHqwJNmJtZVxsdIyWWNZWWunu7sNq0tDS3IYlJvGBc4jRaDS34BCjcPDA
+      fkKqSHRqkSeefPKOyHbfo0j4+/9zTpImsoyA183u9z9Ep9Wy/eHHiDIZr5vFmY8+pHTDdsxX
+      hMp0jnQx4NFRlndzlrjzvt3nv/jipShuOv3laVBBpUKjUpGfnwtAfLKyzAd0l5FlhZSEOGpa
+      ekkvqFhqce47pFAAp2sGq8WIw27n3OlmQioNAfsIgkZDenYhbe0d+N0uUuIseLxOqs7WEFQE
+      dCqRmalxYjJKOHqkB53ZyobK+d/BvINgvV5PU/UJmlo76e0fv+554cp/mX273qKhd5QtW7dQ
+      mBN2h7wVcvOLSLFZaWyuIyTJjE5NEGEysWZNOT3dneSUrkCvnu3qjA724wnJTIwO4A6F2LBm
+      BV7XBN6AAChIoogsS0jytfve8yqAFJxhxOVhZnSUjq7uRS/og8j2nTtJjI+bdZ6/wW6NyxsB
+      tblwzp8gaNAZLRDyEhDMrCwrQ6fRUlZQTH5BCZGRNtatXY93bIAJp4e8onISbYkYdVpKy1eR
+      nZxKY/cYxSUrsEZp0WsEHFOTBH0u7O5rT+HP0wUKMT7pJSEqCk9QzbbNG+7Qg3iwGB0cJUIn
+      ceLECRKzikkLR4a4JoJKgynvT65K12pg+46dl34nJ89tRXU6P/29Op5+5hNkpM16KCbsTL4q
+      n7TkxDm/r2fHMI8CKJw8uI9+l5/SgjzGJ6cxp4QdPG5ETnExORSzcYvM8WMnllqcBw6tzsD6
+      DRsXLb95FEDHxz//ApPTTqKtUajVYYeYm6GzoYqPzs0ugAXVZjZvXWKBwszLvLW6vb2N7rZG
+      7J4gBRWbWVt+ZwySHiRyy9aSW7Z2qcUIc5PMqwBFJWUUlZQhyxPs+3U7hBXgplEUmf6BQTLS
+      w5Eh7mXmVYCj779D94gDUFix4eG7JNL9TzAYQBTF2ZVxRUEVnia+ClkKcuDXu1Esqdc0hx4f
+      7MEQl85IWyMZFRVXDGIVFGXuuX09XSSnZ6NVL/w5z6sA2x7/ONsWnGWY/bvfRFJF0NHZQcX6
+      R3h0S9id9DcZqD+GIWs9W0uTOXVoL4OTbtasX8VHR6sRDAb0zg5I20Sa1o+6vZZzTX3o9BYS
+      9AHGpn2Ul+VxvqEblUbDWGctxZs/xkPryxcsx01ZlAYdw9S09S848+WKUatFUAlkFZah+L2X
+      0hXloq0Ul2ymli0KqNSz1W9w0sMj6wpoau0gIaMUveInPSObyspVOCfGcc94KFqzhaBjkJq6
+      JhTJx+jIJHkVG5D8brKy81izouSWxJjfGlSWqDtfxYw/hC4iipCUilYdjnl/IxJS0vAoJspK
+      ijAZL++Z0N/dgWPGgy0+nsExOzq9gfKSgmXpFJO+Yhtte3/NkelUinJS+KhhiA0bVjHpAL8l
+      j9R4M+fqq0nLzcNqsyKY9eQXlFKU62bMGSQpJQWd1YiSn0eMAWrqm9m6tmzBctwgOrSP9v4R
+      VmVYOFBXh6KLYX1ZeHn/RuQXlbDv3beoaujgD77yqUvpKampOFo78c74KCwrZaK7C1FRUC1D
+      n2BBpeXRpy+bQ1+suvFxALNWx0/8RlVLWX11VzItfjYt6xZlmj86tNZIrFFFdccfiAoAACAA
+      SURBVNcUOzatJ8J6cc9chWAgACoNWo0Kvz+AwWAI2wRdoLuzg9KNj7A50nJFqkxtbSP5xaXI
+      M+OMTzjwBkOoBQHVMvQJVmQZz/Hjc9JM69cj6O7uLkPzr24pMoJKwGiOwhRtI802u+GbGPAz
+      MDiM0+EmNtqIPySjMkSRl5F0N2S+pxnta6O9q4/mtg959GOfmuMTkJKSjGPaji0pDcvkKPFZ
+      2ct3n1pJwv79f5+TZKyoQK3Tcf7scVxBDTs2rQdAUSTaOnoovGB9vJjMrwCCgEalwuuYZsox
+      Q5pt9mVq9AasZj1+USAYEsnLz6OzPewQAzA9OYE3KCGhJjvjymjaKpJSL7fphqSw99y1UBSF
+      /tEJJEmit6Oe2vYBKirK6RsaRiX5aWhqZv1Dj5KySM5GN1AAFaWr1mLq6sBkuOx0EHBN0j5g
+      pzA3E/vYIBMT40iCNuwQAxSt3kzRapixj9HV1090ScEdku7BxO0cZ3zSgV4JENBUYlALjI4M
+      M+1yIQemEQN+Jqbdd0cB3vjZD9DHpzM54eYrlZcNkDTGSHLSZCRRIjM3j6mpaXJzwiueV2KJ
+      SWBFTMJSi3HvIgjoi+aG3Bc0GoJeiU9/4lPo1RLd/UPo9UYSE5KwRsfhd02i05pJil28vZfn
+      VYAtOx6muq4Jr2uC/jE72cmz1qBqrR5bwuWXa7OFTX7DLAxBoyHhb/7qqvRY0+XII2XFVii+
+      cn5/8U1x5lWAlMwCUjILUBQFUZQW/eZhwiw1NzUJIQgCWm3YHDrMg8eynYULEwbCChBmmRNW
+      gDDLmrAChFnWhBUgzLImrABhljVhBQizrLltBRgb6KK2tpaeoYnFkGd5oMj093Rid3lvfG6Y
+      O8ptK4DLK1FeUUbI7VwMeZYFrtF+FLONkf6e8C6RS8xtK4AihQgE/IjKfWTmucS4vSIxVhMG
+      jSasAEvMbStAbm42gwMjZOfcqlPa8iM+IZqO5ha8ssDy8QG7N7ltAx+Vzkhe3qynzkWHGOC6
+      /q35abb7xrFerRKQpGsbAQqCcF2fhxuhNceyoix6We8Sea8gKIvoia0oyqW/W60c9wuSJN3C
+      7jFXc9F7TlGWxyYjF/2ez587y4oVZdQ3dbGifHbLo7tdfkEQhEVVAFj4Hk33K8ulwt4pumuO
+      cbiuj8qtDzPWdAovEVSWZlNdV09a8Xp6q/cTm72OrWvv3EaDgiAIi/6ZFgThLlQMhebGRsQr
+      dNdpn0K8iyPKcOW/PbIqNiAFA5Sl6aip62HG7WJweJgIvZbegWH8GNi85s7vsnlfGvlLfhdy
+      yEffiAtDaJKQxoARAZ3RTWdvH5bYZFJs0UstZph5EAQ1q1evQqWNYeP6IryCGZNei0tjICPZ
+      hsZmQHUXvjGL3gW6Gwx3NdFr96MoKnJSYvBKaiSng8jEWDxuN26PivLScCTriyiyRGd7K26f
+      TE5WAl29I0RGx+F3jhMUDOSl2ZiYdjHjDVBeUrjU4t417kgX6G6gGKxsqFxNVooNQaUGQY3F
+      akWRJERRwRJpunEmywlBRVZODsgSE2PTFFWU43NMY4xMwaZVgTWWOLOGyNjEG+f1gHFfdoFS
+      Umbj7SSnpFx1LHH5vcMbI0s0N7VSWFbGVF8HgaCEJImEQgEUSSRWkeked1FQfHdjFU0M99E/
+      MkV+cSmj3S2I+mhyU2OorWskM78U3/QoHp+PmKRsEmL0+HwyRuPcyHFjgz0MjjsoLClloL0B
+      lSWBDJuZuoZWcorKmJkYwOvzEZ9RTLzl6qhz92ULEGZhKIqIRqWmr7uH+IwMxns7Sc3Jw6wX
+      UUfFoJdFElPSUN/lgb3REkNhZhR11c14FDOByRFaWlrJLVtJd3srqZlZCEEPar0el72X/e+f
+      xD41wZnTp+jsHwXAFBVHTqyOxtYmvJoEpscHaWlup2RFBR1tLaRn5hLyeDEYrv2tvy9bgDAL
+      Q6UxUFx+OXJyXsGFfn7U5dX7GOvdjckJ4HGM0zXqpqI4nqFJFWqfhkkJjAYdGpWAIAeYDuop
+      NGnAFENmpo7RoT6KVqyhtbEa0hNxTQ4x4ICylAi6/BYUn5aQrGDU6VGrQAl58GkjMWuv/a0P
+      twBhlgiFtrZ2tATxikamJ7oYFWUKUmKprjqNPiqOsaEhci4FzzLhcfRjjrTS0lCLRjcbqLm1
+      vROV6MWjiWemr5aAKJCZEMmZ06exRCcxOjxCfkH+dVfc78tZoDAPHlcuoF5vMXU2fXYHeBCu
+      CrN5+bqLMWivPudK7shKcJgw9wv37TRomIWi0NxQT0hWaGxsXGphboIgDocXkJm2OwAZj8d3
+      6agsBZmedjE1NXXdHCbnOXYlYQVYFggYZBfvvPkaDtnMycMfsHv3Plpqz/Dm668zONLPW6/9
+      ktaBybsq1eRIPzUNLQSCXlobG2jrGcI3Y6em5jSd3ZNAiAPv7WLK46a+ph2n04XP5cLjc9HV
+      PUhbRxugMD09jRTyYrdPU1ddzYTDTWt7+03JEFaAZUJ2+XrGxx1sLIqlqrqRkHsEh8OFOjBB
+      5+A4uthsCtLi7qJECoFgCM9gB93jY4RUMXjt47S0dVBaVoLmQt89v7SCzqYGALp7epjs62HS
+      E7wiH4Herg46W1rwSjJavZ76hptv5cIKsFwQNKyuXImgMbF2ZTHWhDSCwSBGawK22BjyclLv
+      sm+CQm93HyqVCkFQY4owoNVqEKQQTS3tyBcMgTQ6I0lROqZ9ITzOKTp6Bi7sNaa6ZFqdmRRD
+      27gfwTmA3R1Eq9Wi1mhwTQwy4/ExOGa/rhThQXCYJUORZRQEVFdYvV30j7jWfmmyLAGqOedf
+      uGh2Q3KVgCTJqNTqm1Lm8CxQmGVNeBYozLInrABhljVhBQizrAkrQJh7muttt7tYhBUgzJIg
+      BVy8+vLPeP2NXXili/tLX33er/fsBu6cIoRngcIsCe0nf40jbjXe/gYyMhM5cqoBkzUeZboX
+      r8tJydYnaTh/HvuMmzV5CYxMTJNRupozBw+y87nPUp53tTPUQgnPAoVZMiJjYhjsH0ScHqGz
+      rx+PqCHKFEFEdAJbK4sZHxwks3w9iVYT/f39RMUloBL9lKzdtiiV/yILUoDzh9/hL//mb/jp
+      63sQ5ZtrON547bU5v92Tg7T3jSN5Hez58OhCbn9T9DWd4Xh9NyDxi5/+CLvby/f/9//gWPVc
+      25CQ18m//fPf84/f+hZnGnsWdI+R7iaae0cXLpwi8+u332DaE6Kj+iPOtQ4s6PKOmmOcbR0E
+      Qvzkhz9ixjPDd/7+bznd2DvnvIBrgu/80z/wrW99i5r2oQXdY6Ctlo7BmzMkm4Mi8s6bb+AO
+      SDSdPkh999i8pycUrCM/RkRly2HzpoeozEsgJTWFlStXYcutYN3GDRi9wxRVVPLMxz+F0Wgm
+      IzOXsqLshcs2DwvyCOtuauIzv/dnnH/pn6jvyOXQ229hSinkC4+U89I7B/H5RF786vM0tQ2R
+      YQ4wY8mlr6+PqcF23nj3fSzJhVinz/JWtY+/+pOvYzQY6G89yyu/+oCS9TvJMro529yNVx3F
+      H3z1+Vsq0NRgB+0hmc3lmVijo+htPsnBM+2U73DzH9/9Z4IGG7/9lc9D0EfbgJ3f/8ZvExdn
+      4ZVXXiMrKZKohFSOHD2Gy+nly7/7uxx5+2WGPRpefPEF9vz8x9i1SehHz1A7ZeT/+cZXeP/X
+      7xHSxvDC02t4ddcRnE4Xv/vNb7D3tf8kYEolRhPg0Wef5cD7B/nEJ58jaO/nfMcQXQf2s+aZ
+      L/Pdf/5HjHG5fOmLH0d7g7KN9rYyFGVlTWESsTFRtFUf4URtD+sfc/C9f/5HVNHp/PYXP4Po
+      d9E15uGbL75AfLyOV37+BqmxRhLTUtl/6CQet48Xv/HbvP/GS0wEjXz9a5/jzZ/9iIAlHV/7
+      YXpCNv7Li59n3573EExJfGJHEW/vP4nD5eObv/c13nzpJ2hseRhDTp755DPs/eAEn3ruKTzD
+      bTT0TXDmwEEeeT6df/nWz4hJLeG3Pvv0VTFQBUFF6ar1l36v37xtznELEL/lctoO253xV15g
+      FyjAS9//Dv2yiY7D77L18/+VaFcPzT1dqBNL2Vlg4P2TjdQ1dTDa1UTPqGv2Jio15qhoDnyw
+      j7KKlWze+RQ5Nh1na5t46619fPO//RkNpw7S0dLMhieeZ2Z0YV/k69HSWEdyfjHZWUVYAwO0
+      jgYYrD9J28hsKHfnxAB79+5lYCpAknaaXxxqIdksMSma2VYax643X+fDuiHEiRbefftteqVE
+      fveFj1NWWszaHU+RHGMkwmSm6aMD9I6NETAkk2zyc/b4YSa1GXz1c88So3Hxq1+9xahXi1qA
+      NRvWUXf2FH12SLUE6ewdxhpjRbWgkZhCQ30dGUUl5OaWo55soX9GTcfpQ/Q5Zs2G7cM97N27
+      lxEXRIUG2H1ukDitF5c2njVZBt5+4w1Otk/hGajmrbfeYToij6999hnKigvY9Oiz2CK1mMwW
+      ao99QN/wEFhziVI5OH1kP8G4Ul745JNY5Ele/+XbuGQTKgHWb1zLudMnGPfqiFW76R4Yxxpt
+      RbhG2SRJ5j/eOzfnzxcI3f5LXyALVAA9X/rGH/DXf/ZHFOamU3v2FN1jTiL1aga62zh6voPs
+      1DgGe9uoqmm6dNWRvbuwpuQQoddhNEfS117HpHP2RSXERFBVdRavpAGVCp1Og/o244rWnz7C
+      oZM1AKg1GtQqNbakFBD9rN60kySrAQCtzkhCQgJaIUR91yTRyiSDdg9jfe0cOzcbRSFCCJJT
+      sYnKlWU4+xrZf/Q00TGxtJw/weljhxlwSFhMBlDAYIxAp9MQnZDKRFcdBz86y6bHnmbvm2+x
+      46HNACTnlDNw+j0sOSvRqPRsf2gLR99/h5nAzWlA9fEDHKuatXZUqzWo1RqSU9IQA17W73iM
+      WNNsO6I1mkhISEAt+2gdmEHnGWTM5Weoq4VTdd0UlZeiU4IUr9nByvIixtrPc/DEOaJjY6k/
+      c4wTRw4x7lVjjtCjKGCMMKHTaohPSWegqYojp6p56OmP8e4v32PH1jUAZJWspvnA68QXr0NQ
+      G3lo+wY+3LsLn3h12SRFYe/pzjl/gZCELEtMT9txOBxMTk4hyzJTkxMEQyJer5uJySnkRZy3
+      WdAskGNyDH1UPEatCkWRaKo5hyEuA6unhe8eGOTzT+8gPzOJtqYG1EYLtqRUAm4HlggdLZ0D
+      xCfYSEuKp6WhAVt6LqIYINZioLq6jszCcnSyH2NkDA77JAkJtlsqkNc1zeDoBEZLNHpBJCY+
+      jvExO8nJNob7e3D5FbJzstAg0dvTgyhDTGwcIVHGrIOpoXb+/b1zvPi5j5OdmcrU6CATDi9Z
+      OTl47KPYvTI56Ql0dXaRkJLGyNAwZpOJmJgoPAFQyx6MkfG4p4Zw+gV04jQ/en0/f/uXf4pa
+      AFAYGezDEGnDYhDo6u7BGBlHWrLthgZcbucUw2NTmKJi0CghYuNjmZhwkpQYx2BvF56Qipyc
+      LFRykJ7ePiQZYuPiCElgVInYBxr44YEuXvzMU2SnJzM+3I99JkBWbi6u8UFcQRVZyXF0dnWT
+      lJrG8NAIFrMJq9WMX1SjBN1YYmw4RvtxSzoEzzAv7zrBX/35H14q21B/D+aYZExaic7uPszR
+      NlIS464qW1CU+PRfvzkn7aX//hyKd4q9R6uYnBgkKzWByOgYvEGBoM+HzztBVEQ0JRu2kRF7
+      +5H/Fs0YLuR1MOlTkRQbedtCLTWi382Q3UtG8q0p4G8y0t+NISaZaLNhUfK7HUJeJyPOEOlJ
+      i2P3P9jTRWRCGpERC48ocT0FkD2TNPZNMTjURVl2Ap19QwRkA5nJyTjdo2TEJ6FJzCA3/vbL
+      ELYGDbNkSJLMKx/Uz0l7/qESNIKMJxAiGPBjMmhRaXS0NDUSm5CCxazHoNUhaA0YdTeaMrgx
+      wgUP/GtyaNeryt/+3f9UPjheo8iypOze/e6c451NzYr/it8++6DywbEzyoHd7yozoavz89iH
+      lZ4hu6J47crbH3x0vdsqiqIorpFW5cOTTfOec6fpba5Svv3tbys/feWXyrTHo7z2439TatoG
+      FfdYt/Ldf/+x4nBNK+/sPrCkMl4XWVSO7n1L+advf1/paK1Tdn146qpTpJBf+cWrbyjitTNQ
+      GmqqFKc3eM2jXnu/8stdhxdT4iUB5pkGPdPQwR/+0Z/wxr/+f5xLTMVqjWOgtYZdB46zcv1m
+      fvq//pY1z3+FTXnJjE3biYpNxGyOpOb4bloGhsgpWUemRSKxoIKG06eY7v6Id2tC/PWf/w7x
+      ZhMjXfW8/Ms9rNz2FFlGDycbWvEqUfzOlz5J0GNn15v7aDyfxjOPb8CpxGANjUBcPpk2y21r
+      /s0w0tWAOi4PYfwsJ+oLOHHqNONSNO6EIGerq/n4s49y8Mgpnnv64bsiz0LoPHeA9+sn+OOv
+      fQrncCsf7nuf1uozfOXrL3LknZfpd6r40hefp6m5hcnBdn7x2ruUbHiELJOH3YfPsnnTJn7w
+      nX+kdPsn2VYcx/CEg4zi1Zz94G1C5hSef6SU1o7+25JRkSVCjW/NSdMWP4OgubtdxXmnW1Rq
+      HevXlNA9MM6Jk6dpqqlCiogmOTmVFUXlfPKzz9Fff5w2u4oCm44zte2otRE8/6Xf5tSHu2mu
+      qWLaF+TYh0coW7GCTTufJjtey6kztfzqjV187b/+KecO7qa55ixFWz9GcKAV/4V7F1duZXOW
+      mrNdTva8s4t973+INeruBr1tPPcRDf0uMpJiiIhORuWboGHYR0WG9a7KsVBGBvspW72O2Lh4
+      zAYtcSm5JGhmqD59iHq7iY05RvYdne1+vPfqT4lKy2X3r96krqaKoBCBJS6Jotx0Hnv0Yfpa
+      ztE+IeJs+whSKon1dnC2axGc52WRwMG/m/OnBO/+trHXXwgLeTl94giH9tfwjT9/jt4qyF+x
+      kXjnBD9/YzdJJoG21m4kWce27VvQM/tFUGSRrtZ6guhRyUFaGusZnHSgj4hgqL8DlzcRELCY
+      NHR3deIJCajQEBGhR625vFwyPTlG9WA3ZZ98Fnv9+0xqsrHq767lRowtBZs0RFPnIKi0pEZD
+      oyOCyHt8b4yilet449uvYvINkmmLwBQZiSk4SURUHDOj56kVFdLWVwAQGxtDx5SLnY88RJpV
+      Q7Cljt0HT2E1G6itb0CPhi3bHyLJ28CB9xvQO+08sl5/x2Qf7G3DIao4uG8/6ypX4PP78foD
+      WGIS6Gs6x0xQIS01EXNsImODA2h0eiKNakRFRWRcKptXly/oftcdBPd3NNMzYqeofAXxUSYG
+      BgYxaWWqGzsoW72eKLWXM/XdFOWkYY5LxEiAYbsXtThDe0cvRSvXESE7qarvJCkpmYL8TM6d
+      +IiMogqCvgAJMUaOHD1BceUmjKIbQ2wCjtFhEtPTkf0z1NU2IJjiWFGYzjs//S7JO77Cxvy7
+      F7XANTVCR+8w+ohIigqy6evtJ94agUvUofgdxCcm0T8wRl5Oxl2TaSFMDPXSM2ynIC8Ll0/E
+      oPjRRydiH2hj3COwuryQ/v4B0lMTqautxxidQGyEQnf/OPklZWhDLtr6J0izRWG0JmAxammp
+      O4tkjKco08bQ+AwZabceilsRA7i/u3pOmunrxxBVWv7t+/9GWm4BLm8Qi17Hs08/xXt7P8Co
+      FgkpWjZuWMUHh4/ingmSnhSPYFCzed0mTlTV8Pj2zTctw30xCxT0Oalr6adyZWl4W6IHCEUK
+      4dv1zTlpxqe+haC3UHX2DMVF+fQOjJMca6a6oYWi0gpC3hlkVCQmxjM57WSwuwONMYrEhBgS
+      E5IYGZ8gIyX5pmW4LxQgTJg7xaKYQ8tigLrqs3QPjnEjTRrt78Tlv/a+u2HCLAW3pQCKHOT/
+      /N3f0DE4TmNtI6Ii01hTxeC4A7/HxfBgPy2dfSiKwmBPO7te/zmDjhD9nU00dw0gh/xMO5wM
+      j8xvOnunma8RFEWR0dFRurq6CAaD1zxHuRDLZnx8/KqNtScnJ6/pzTQ+Pj7n9510/VMu7N18
+      LRkURWF4eJhgMEggEECWZfx+P6IoIkkSXq+XUCjE+Pg4Pp8PURSRZRmn08n09DSBQIBQKIQk
+      Sfh8PlwuF06nk2AwOO9zvVe4rQ0yAtMjSNFZrMi2cay6h5oPXuP8lJWhd/bzxOokjg5HMNJ8
+      jj948Wleeb+VCJeD6b5afnWslsjQCKHHdvA/v/1LXvzd3yE5KWGxyrRgrheICSAQCFBVVUVE
+      RARarZauri4sFgsejweXy0V5eTlNTU0EAgGio6PJysqiubmZ0tJS2tra6O3t5aGHHqK1tZWc
+      nBw6OjrIyMigs7MTtVrNqlWrSE1NRZblO7q5+LXKePToUUwmE3FxcQwPD3P+/HnWrl17STlF
+      UcTv95OXl8fk5CSBQACv10tcXBx+v5/IyEh6enowGo1otVrMZjOxsbH09fUhiiLPPvvsHSvP
+      YnFbT1xrNOOYGCE1r5yRjmq6evrweD0UlpUjqDSs3/oQ+ekJDPX3seHhJynLz8I5MYzdMUNy
+      VgkmjcCGRz/OY5tWLFZ57gharRaNRsPo6ChqtZqBgVlHlvXr11NfX09hYeGlyjs2NobBYKCt
+      rQ2TyURRURH19fVERUUxMTGBxWLB5XIRExPD5s2bsduvH7bvTmOz2Xj44YcZGBhgfHycmJgY
+      JElizZo1GAwGBEEgKSkJURQBsFhmFyF9Ph+VlZWIoojH48Fms7FmzRqcTiczMzNUVlYSGXl/
+      2IXdlgKoI2J44al1fPs738OSWsJTn/kiWs8IXn+Q+LQ8kqONlJRXsHLLYzQdeIPOaZmKDTsp
+      SzHi8njRRdpYUZC+WGW5I2g0GkKhEB6Ph9jYWAKBAImJiSQlJWEwGCgvL6ezs5OBgQGSkpIu
+      bfCQnp6O0+nE6XRSWVmJ1+slOTkZjUaDIAgkJiai1+uJiYlBEUX8NTV4z55FCd09m3ibzcbR
+      o0d5+OGHSUpKIisri9zcXMxmMyUlJWRmZtLS0kJ0dDRlZWXIskx5efmlVq+kpIS1a9diNBpx
+      u90kJCRQXFyM1WqlpKQEgNDgEIH29nu2OxSeBQIkSbpuF+hGBINBTp48SXR0NBUVFbeUh7eq
+      ipBrBo3BAIqCacvNz2XfDMo88TbnY3h4GI/HQ25u7oKnoEVRRCWKOF75OYLRiHnnTrRJ99YW
+      noIgCOFN8m4TnU7Htm3brhr8LgTFH0AVFYXaaCQ0MrKI0t0eycnJiKJ4y+svgkaDymRCcntQ
+      R0UtsnSLQ7gF4NZbgIsDZJvNRlRUFA0NDWzbto1Tp06RmZlJKBRienqauLg4srKyrpuP7Pcz
+      c+QoKkXBtG0bqgjj7RTnKhbaAiiKwokTJ5ienmb16tVUVVWRmJiIz+djZmaG9evX09XVxdTU
+      FE8//fQ18xBFEbVafU8vXobDotwmiqKwcuVKmpqaqK6uZt26dZw/f5709HSam5vJysrCaDRe
+      GkReD5XBgOnhnVieeHzRK/+tsmHDBtRqNc3NzWzatOn/tncuT22dVwD/6QnoBQKJlywQw8tg
+      CObhuPVMkjqZ1nEm7WSTRZuZrLrqsvv+C023XXTG00WbSTKZaevQ2Mk0ialrOwSMYx4WAoTA
+      IJAAPdBb9151ga3gGNtYAoSu9ZthAA1X93y63+F853zfOYft7W0ymQwdHR2kUim6u7uLxtF9
+      GiUFyAOVSsVXX33F2bNnUalUGI1GAoEAVVVVaDQaFAoFS0tLtLa2FlrU5+bKlSsMDAxkHX9B
+      EEin0ySTSZRKJWNjYwwNDRVazLwpKUAeuN1uotEoq6urmM1mhoeHGRwcZGRkBLVazcbGBq2t
+      rYca3z8sRFFkamqKpqYmnE4nzc3N1NbWEgqFqKurw263o9PpCi1m3pR8APKLAsHOUkgUxQft
+      fnbCoAqF4rnWv4IgoFYfTkwi1ygQ5C5XyQc4bmQyBDY3SCTTpJMxAuHIgd/ioQI8/H60ZPCt
+      LjG3uIKQinNvZppwNHnEMhQfL4wCeJcXCMfTCKKA0+lic8XNVmTvsz3FSDoWxhdK0lhvYcXj
+      wdbSxrLnYAqMyRnZ7QOE1z2MOr0MnO6lyqTP1qPxr/kpM1fjXY+iLTPTWFfBViRCZUUloijm
+      vVOZzz7AXtc/bflw7eo/iGKkr7+fBosZhQLSqRjb23HmJ78HnYnGMg1qpQJJkrJfuYwx13E9
+      /Ex3j2Gnu2PuS83DQHYKYLTaMN2b4oM/fsDg2XO8deF1NEqotphJqyuIxeKI8U2WV5VY7Cez
+      DyRfHwDIew2/3+sNBiMe1xI3Y0Ec7QMMnHJQYazBVLGBlKmgwWLAOT2NzlSTXY7lM/lyHddx
+      9wFAhk7w1tI9bq8kON12AkESMFvq0aogk5GIRqKUVehAEkgJEjpdBQoOzgnORwGex9mcm3PR
+      4mgmFElg1OvQaNRZOYCsI77755IT/DiydIKDAR9mawPuO9eIaSxoHzxzhUKJwWhEo1ah0Zah
+      fzD5i5G7d78nlQwx8t/R7OQHHok8PW8U6kVFdgrQ3DVI2HOHqL6ZZrPsVngANFSWcemvn9LR
+      01NoUYoe2SmA1z3FvUUva8sLyCjI8wgzCx76+/vQaWX3+I4c2X2CKkCpLsNkMqGU6QrAoNXg
+      drvZDB38XsaLhuwUwNzQglGZZN3nQzzcDpsF42RXF1qtNu8+CiVkqAD356dQVNXTbreynXz6
+      KcxiZcGziLWhDr93tdCiFD2yU4AT7X282t9NNK3BrDtemy4HxZlzr2NSZ7A1He900mJAZgog
+      Mfv9KEuBFDpxC9+2/CxAdDvIzdFRam2NuGZmn31BiaciszhhhlgsQTDlx2Jtx1aVfxOF40Y8
+      EiaVSOLzhTg9mFsOcokfkJkFUFFrNdPc3kVFcpX7QflZAEtDE0ajgZd627k7fqfQ4hQ9MlMA
+      sLf3MPfd17i3y2mS6UZYnUHDR58M09H3fKXASzyO7BQgGY8R2ghTazEQxJvIHAAABVtJREFU
+      TsoxDiqxur6GsdLK/bmSD5AvjymAKIp8+OGHBINBhoeHuX79OplMhkAgwPDwMBMTE0xPT3Pl
+      yhVcLhdXr17F6/Uye0yKH/lX3GjKDcw5p4nIUgF2DvZ5Zu+S0R5Nuyg585gC3Lp1C4BQKIRC
+      ociW7nO5XAwNDbGwsIDD4cBkMrG4uIjBYODGjRt4vV5isaNvcfNjGls68a7MEEzpsZnkuARS
+      0mRvps7eRGf78WzOUUw8ogCJRILl5WW8Xi/z8/M4HA6USiWCINDX18fk5CTBYBC1Wk11dTVa
+      rRar1ZotjzE+Pl6QQexm1e3k3K/e58wJJe7NJLuNktczy9pWlBXPPJNT90hLhbdYueD2bnHh
+      jZ8y+r+bSLvGEAmsc+3GOEHfMrcn7jDnOT5Fto4re+YDzMzMUFdXx+joKHq9nsbGRmpqahgf
+      H8dmsxGJRAgEArS2tmarAk9MTOBwOGhuLux/pfD6Ipf/c4OMIFBuruXtNy9QpoZUNMjs/Bza
+      SjtSLILNWk5YMtJgMRxIPkCu5+0f8uNz9087zvzl5Y8JxCQSSYGzP/s5HfZaJDHFrMtDKp3C
+      oNVg7+jAPTtLW3tbNiMsl+oUuX42u4sE7B7TccoIe2JpxK6uLgAuXLjwyOvnz59/4pu99tpr
+      ByhaHigUmGtqSUaCvP6LnckP4HYvolRIBEJBKjUaFAol0jHwWXJBU1ZBdZmaKlsHHfadjvap
+      WASJDH7fOuUNdSRSaVJpoZQR9gxkuEhWENj0oVKXsftxd5zqQ4gH2YxrSAZXWVoP0tZZj1K5
+      kzGVT+2ehw0o8nkPpVK57+vTiRibsQwWxw8bfeXGarpPVmNrqMeo07LgXqC5rSNneV4U5JUS
+      Gd9kZk1ELYYwKpOo63uw7KN2UzGlRDqds1QbNShNFtYW1zjV074v+UopkY8jv+rQ8S0++3yU
+      TGyFer2KV37dw9E1Vj0axm9eQxLjYD6BWjLuSwFKPBl5WQAxiXvpwRFhhQKb3ZHNCX7qZUVk
+      ATZ9q9mCVyazhZqqZ+8FlCzA3sgvKV5VRkuLg+pKE9a6ejTHJ+BwYNTUNkIyRDCSIJGQac7n
+      ESIvBQCWZ77lo7//i2+vf8FiQH6H4UBgYsZJxO9nYvx2oYUpemSnAIbKGpSqFPPLIWr0cjMB
+      EtvhBLWVRtY3fHT3DxZaoKJHVk7w/bvXmFgT+cmb79Bs0aPTHN/1Z24IfPbpx3hDYV7q6UFI
+      JQotUNFzaE5wJh5EXJ/EF0qxou2kw16DSV92qE5RRkzy5fA/iWuqqTZWMPDyOXT7yIkpJidY
+      kkTcix7sJ06gVKlRq55txEtO8N4cShg0I6RIffcX0hN/IxMP4Ex28qfwu+jLNVw828a7509R
+      rj0cwyPEgpjrHdyfnCTg19A7eA5klhTmvOfEMzvBtW+SnBp6hZd72wotUlFzoBYgIySJX/49
+      ovub7GvfPVCAh3Q7rPzh/VfRlR/uzFyaGqXccYZa/bP/tpgswA+EGb58m7fefvYRlJIF2JsD
+      twCpW39+ZPLvxfSin0ufT/C7d84c5K13SAT55PIXZDLgX57nl789hHsUmFtf/5tp9xogYmsb
+      KLQ4Rc+BWQAptkX00tuQDD/y+o8tAICUjvObIQNnBvsRBIGxsTHee+89AEZGRvD5fJw+fZqN
+      jQ1cLhctLS1sbW3R29tLeXk59fVPaLgsiURi8eyvOr1hX9XhitMC7J+SBdibA90IE1fGHpv8
+      TyIRi3DfHyGVStHZ2UnlribK6XSaixcv4vf7GRgYwGq1AmRbds7Pzz8580ypwmAwYDAY2Fx1
+      E5XxPpEYDzE9v1RoMYqe/wO8N4x4uXcChwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Life Expectancy Trend' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Life Expectancy Vs Cholestrol' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAARKUlEQVR4nO3dyW8j6XnH8W8VN+1rS2qpJTXV2np6ujueJfZkMDY8HsBOYgSBk5uTIIfk
+      lmsOOeQw/0mABEkOCQLEAzhGPJOB4xnPlnicbm2kRIqSqI0SJVLizqp6c9AyvRQ1KolkU6rn
+      c2pBT5ce1csfq1jUw9KUUgohXEp/0Q0I8SLVJACWZeHkwGKapqPtO6lXSmFZVsP04qTeNM2G
+      2Y+WZTXUfqxWLzU7AjhZOKdnYU633Si9XKS+ltu+qvulmmsqp0DC1SQAwtUkAMLVJADC1SQA
+      wtUuHAClLFaii0RW4pQLGebn5khnitXsTYia8170P1pGgcOcCeYeK8UMtycmWYnG6JieOL3s
+      dN5LVRe5rFWreumlOvVXpZcLB0BZBpZloStFydTwej3oqKd+2HnfrHD6xoaT+pNaTdMaohcn
+      9Sd1jdC7k+3Wuhen+/Gs2gsHQPcE8GgmlsfHrYFuFhfm6b4xhK5/dVb15L+/rkGPx3Pun+2k
+      /uTBf976WvZy8sTgZPu6rjsKQK16h6MgNsqaOt3vlWovHgBvgJcfPDj9urOn/6KbEuKFkatA
+      wtUkAMLVJADC1SQAwtUkAMLVJADC1SQAwtUkAMLVJADC1SQAwtUkAMLVJADC1SQAwtUkAMLV
+      JADC1S41E1wqlSiVSiilKBQKNf3UMyFq4RIjkSbJ3V1WVtYYHekjlSnj9bcydWe4mv0JUVOX
+      GIn00d/bTip7k0KuxNT0FMuLkdMPUXUys1nrD1J1MkBdy16c1p/sy/OORNa6F03Trt2aXjgA
+      AKsrcUaDU6TXI8Tjccp4LjQTDOD1OmvlvPVO50dr2cvJgp233jRNRzPBTrbttN40TUczwbXs
+      pZpreqkADI9N4PN5aLk9zsFhhuFbHZfZnBB1d6kA+Hw+ADTdQ2dnZ1UaEqKe5DKocDUJgHA1
+      CYBwNQmAcDUJgHA1CYBwNQmAcDUJgHA1CYBwNQmAcDUJgHA1CYBwNQmAcDUJgHA1CYBwtUsE
+      QHGwlyC6uoFlloksLVEsO7uVphAv2oUDYBlFVjZ2GezvJb4c4cbNQZaWItXsTYiau/BEmGlk
+      SafyLM3NoDW3M9Tagk9HhuKrWC9D8fYaYije6++ku9OLZen0dTUTmp+nub1XhuLPIEPx1alv
+      iKF4Tfdy7/7Do39rGn0DlqOdI0QjuNRQ/JPPTPLgF1eRPGqFq0kAhKtJAISrSQCEq0kAhKtJ
+      AISrSQCEq0kAhKtJAISrSQCEq0kAhKtVDEAhk2I3dSh3fhTXWsU/htN1ncef/zePF2K89c4P
+      eOXeBA7+KleIK6HyEeBwj+10gd/9gz/EZ2YwZNpRXEMVA5BKbvPqW9+nvB2id+wBvvPPHghx
+      ZVQ8Beq7FeSn77+P7mvi93/7+ZwoZTL7eIb2nn46/CYrm0k6ewcZG+6vacNCVFPFAOQzaXL5
+      PM2aTtnUCDx7BLAsLGVRKJYwcyXuP3x4fKPsGzITXKV6mQm2V5eZ4EImTe+tcSaGe/HbnP4o
+      DSYm77G6GMJo8ZPN5ykblswEn0FmgqtTX801rfjbdA2Msr82x68++Yyi8fz3Nc3D3s4G7QND
+      TIzdYW9rk7HJiXM3JEQjqBi57dUwh7Qw1hOgYJi0P3MOpGk6w7fHTr8euzNeuy6FqJGKR4D+
+      kUm+982HZMo6TT55A0BcTxUCoNjf2UTvHGJ6qI3DgrwJIK6nCqdAFqG5OZLaFv3dXUy3yZsA
+      4nqqcATwMD4xxm998y1ueDMkMnIEENdTxdcAQ8FpFj79gOW0zkC7/NGouJ4qPrLL5RLZVI6h
+      wW5y5Xq2JET9VAzA7voymifAwsIc2aKzd/WEuCoqBuDm6CTbW2EypRb62y71EaJCNKyKAdha
+      XeSNH/6Y+/2K5Z0sMhcjrqOKAei9OcrW4pdsZ2Fx5kssCYC4hioGQKGwFJRN+M6338IjF4LE
+      NVTx5F4phS8QwO+3QJ79xTVlH4DcDpGkzu3RW3ToBkUTWuvcmBD1YB+Aco7//NnPMPNJulsC
+      /OgvXq1zW0LUh30AOkb4q7/8MUod3QapRZ7+xTVl/9JW02lpDhBZCHGQzVW8AlTKpfjiy1ky
+      +wkePXrERiJVw1aFqL6KL4JjM58RiRywm97EeP33GO16ulQpi9jaNn4v7OykuHv/PrHFCNaN
+      DpkJrlK9zATbq/lMcLmYo3twDGPml2RK/Qx2PF9m5A8olEySOwmabg5gmCampWQm+AwyE1yd
+      +prfJzgdn+MffvIxA8EputubMCzwPfN7+1q6ePigi729m7S3+FmORhgaHbPbnBANyzYAPbcf
+      8qMfNrFb8NLT3oT3jCegnp4eAKam79akQSFqyfZ4powCpt7EYXKTtXhcPhZRXFu2AfA0dTA+
+      McHbb79Nh5liv1DvtoSoD/tXBoUU//iv72GYFoZh8kdv1LkrIerEPgBNXfzJn/4ZAMqyQD4V
+      RVxTX3tNa3HuSzIyEimuqYoXXg8SMd77+SeUjSIjafjem6/JDTLEtVPxCLC/HSf48Hfoamol
+      n9qgJFeCxDVU8QjQPzrN7EefE3z4KoM9bfhlIEZcQxUf1h6fn7YWP5/+4n187b1y+iOupYoB
+      KOYO2dnP8K23vktHk3w0orie7N8JVhapwxx+ijx+PEPRkKd/cT3ZBsA42OTv/unfwMgz9eq3
+      afHXuy0h6sM2AL7OW/zt3/w1d++/QjLya3KlerclRH1UvlG2x8vkvW8wea+e7QhRX3JxU7ja
+      hQOglGIrvsLmzh7KNIhGIpTk76bFFXPxI4AyaevuY3d9jZXlJXr6B1hcjFaxNSFq78If+6zp
+      XnLpdfIli4Cp09bWik9Xp4PcMhR/+XoZirdXlxtlfx2rnGf/sIjfA+3tTYTm52lq65Gh+DPI
+      UHx16ms+FH8euq+ZqckJ0DQ0TWPgpuVo5wjRCC515wvtgs/2QjQKedQKV5MACFeTAAhXkwAI
+      V5MACFeTAAhXkwAIV5MACFeTAAhXkwAIV5MACFeTAAhXkwAIV5MACFeTAAhXu/A8gLJMokth
+      yloTwaEelqKrDI6O09vZUs3+hKipiw/EaDrB8UkWHs2yul5i8t7LxJaW6OmYPB39O+/86Mns
+      63k5qT+ZTT7vWGGte3EyK31S10i912LbF+mlWmt6iVMgRXh+jsHxCbxKoWngYP+4kpPZXlEf
+      Fx+KNwoUiwa7W9sMDfaztDBP781RtOMZYTj/mKSu645GKp3UW5blqL6WvSilHA2WK6UcDcU3
+      Uu9XZU0vHACPr4VvvPbq6df37vVcdFNCvDByFUi4mgRAuJoEQLiaBEC4mgRAuJoEQLiaBEC4
+      mgRAuJoEQLiaBEC4mgRAuJoEQLiaBEC4mgRAuJoEQLjapQJgmWVKZROlLPb39jAtGQkTV8sl
+      huItIjP/g9E9SbdKUdACbO8dcnfidjX7E6KmLnGjbJ3g2BjRNOQKitHJYZYXl+RG2VWslxtl
+      22uIG2Ury2AltsJ61sfkQAeL4TB4muVG2WeQG2VXp74hbpSN5mHs5dcZ4+iBbhiG419YiBft
+      4qdAmvZUAn0+X1UaEqKe5DKocDUJgHA1CYBwNQmAcDUJgHA1CYBwNQmAcDUJgHA1CYBwNQmA
+      cDUJgHA1CYBwtar8+WZqZ53YRpKuG4MEb/VVY5NC1EVVjgB7+znuP3xAOZuuxuaEqJuqBEDH
+      oFAsUTbOf1tMIRpBVQIweucO2/FVghPj1dicEHWjKSd3Pz6HJ29K7GSW1cl4m5P6k9nR847y
+      1bIXp/Unc7iNsB8bqZdqrmnVZxifnBt1MsvqZNbUaf3JfWUboRen9Y3Sy8laNsKaOg3AWduu
+      SQDs/v11/8fJjnVS7/Rm07XuxUm90wddLXt/tqcX3YvT/ViptuqnQEJcJTV7I8wq55mdmWE3
+      lQGgmE0zOztLOls8+r5RYH52lsTeAQD5wxShhYXTr5+1s7nGXCjCyXUmZZUJhZeolN7VaJjo
+      6sbx9xWry4vE4lu2tcosEVqYY3Nn/6jX3AEL8/Ns7aZs602jRDi8xMkH4eXSSWZm5sgVDdv6
+      /Z11NhOp459lEF1aJBKL2/aulMVaJMxB8avPssmmE6xtJO17twwWQyHKxzvGLGaZm5tj/zBv
+      W3+wt018c/f0Z8UiYRajq/a9WAbRcIjISvy43iA8N8NGYs922+V8hlBogY3to17PXlPFVnyF
+      hVCYonm8SmaZhYprahJbCrO0vIqlFKBYjYYrrqlRyrMYCrG2kQAqr2nNArCyvMr4Sy+xs7UO
+      wGp8k6npCTbjRztzYy3O8PgUycQGAL6mVsaCwyS2bH4hZbKbzhPs0VjbLYJSrK+ssJ/O2P/w
+      4h5ZOlGlQ0qGRWF/g/2il+7Odtudm9zeoGdwjFRyG4B0MkFzZw/JRMJ286VikUI+exqAtc0E
+      L90Nsra6blNtga6TSh4/aDSdkdtBiunk6YP2qWrTwCzkyB6HSZll4lubpJP2TwylQoFSIY9x
+      3Et4McKNvn5amuw+pUOhnujFKhfJFAzKBylKdjtG0xgO3uEwdVR/uB6jbWSag2QCu/MG3Rfg
+      zliQ3Z2j/ehraiVYaU2B3v5Bev0GO4elozVdjZGqtKbA0OgYxWwKw1IU9jbYL/krrqnm8REc
+      G2Nv92gN08kELTZrWrMAGAp8us5Xp14aHo8X7fg53LQUXs9X5+blwiGhyBpTUxPPb0wdfRKd
+      1+fDMEyUmSee2Cd/sE++aPOpX5aB5vUdvfBRinKxiOb1sba8SNmu3LLweDynvZimhmmU0HT7
+      88bm1nYCvievKmh4PD6w7I4AOp2dHXC6KcVSeIGB4Dh+m73v8frpaGs5rU/ElykpD8mU/dEo
+      0NJGs/+rl3KlcgmvR2NxKWpTrdHZ1Xm66JZlgKWheSzK9gcvIuE5RoJHl7eNsoXP70Gr8KhR
+      ZpG5hSUmJicBKOcPCUfi9msKbG+skPX3MtwVQBl54onU0ZqW7D7JTSe2NE/f0Bh+j368pt6K
+      a4pVZmEhxPjkFHC0poZRQvM8vaaed9999137X+dy2ps9hMJR2nv6KRdydLUGiMTW6Bm4RVtz
+      gNZmH0tLUVo7ejFKeTLpJEUTlOahvbX5ma1p5A732EgWCA51kSkoJu7cxufz0dPd+fwLHG8z
+      e5vLGJqf9oCG1tpLdncLT6CVvt5uni0PBPysxKIEWjsxy0Wa/B5S6QyB5lZ6ujqe+90O9ndY
+      39xGeQOUi3naAjrRlXUGRoJPPRgBsAyWo8vspzK0t3rJFkrsJFNYlkVXdxfPZswo5YjGVsnm
+      Tbwek+7+W9zs68SrN9HR2fpcL9n0Hmvrmxh4scoF+ns6WE/s0dl94yhIT1IWq7Eou/sHtLUG
+      KCkvucMUluZjoL+PZx4bWMUDYuspLKXw6yZN3b3EF8ME2rro7mrn2aeHve0NMmUTS0G5WCCT
+      Sh6d3titqVLEYiugLPyBAPmydvaalrNEVndQKJo8FnrbjTPX9HAvQTJTxFKcuabyIli4mvw1
+      qHA1CYBwNQmAcDUJgLhSHn/xEYmD4pk1yirz+Ucf8puFKOFQ+Lnvz87Onl7Glc8zF1eGVc4R
+      Cs0RO2jidq/O+J1hoqtJVpcX8bbf4AfffROAhc8+oNgxzb2Rfv79n/+eR//3iO+88x0+//gT
+      BoIvE1uYI5faIVn0yBFAXB3JtQU2s01Ewr/BPNjhg//6iO2NKP3T3yK1s3Fad5DOcmtkmLbW
+      ZroGRrnTbfHhL/+Xe2+8Q2zhSwA++uhXrIfCchlUXB3zv/6UvunXWH30KWN3J/iXn3zMn//x
+      2/zHz3/B2k6Gt1+Z4PYrb+Iv7PLeTz9kZOplPKUs3f4iRvsw87OP6e4fwWNkKWWTmFqHBEBc
+      bfmDXT7+5Au6hiZ4/cGk4/8vARCu9v/8diZLFfTrdwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Life Expectancy by Continent' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Life Expectancy vs BMI' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Population distribution by Gender' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total Cancer Cases - Country' width='192'>
+      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
+      mkwA6VT7/xwzAe+KpzdXAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
