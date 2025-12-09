@@ -1,9 +1,10 @@
 # Data Visualization using Different Tools
 
+   Data Visualization 
+
    Excel
 
-        Data interpretation using Excel features like Functions, Vloop UP, Pivot Tables and Charts. Using 
-       
+        Data interpretation using Excel features like Functions, Vloop UP, Pivot Tables and Charts.        
       
    Tableau Data Visualization
 
@@ -27,11 +28,15 @@
 
    Power BI Data Visualization
 
-        Sales Data Analysis Region, Category Wise using Geographical Map on screen and Hierarchy features to visualize Data Monthly, Quarterly, Yearly.
-
+        The Data is imported from Sales Dataset.xlsx. The Sheets in the work book are viewed in Table view in Power BI Query Editor.
+        The Data is filtered and Visuals are created.
+        Report of Sales Dataset has Sales Data Analysis Region, Category Wise using Geographical Map on screen and Hierarchy features to visualize Data Monthly, Quarterly, Yearly.
+        
    Python Data Visualization
 
-        GDP Analysis by UN_Regions
+        Jupyter Book is used to Run Queries and the charts are built using Python Matlab, Pandas, Seaborn Libraries.
+        
+        Data Visualization has been created for GDP Analysis by UN_Regions.
 
    SQL
       
