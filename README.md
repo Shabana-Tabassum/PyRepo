@@ -44,6 +44,7 @@
 
         Jupyter Book is used to Run Queries and the charts are built using Python Matlab, Pandas, Seaborn Libraries.
         
+        Python_GDP_Regions.ipynb
         Data Visualization has been created for GDP Analysis by UN_Regions.
 
    SQL
