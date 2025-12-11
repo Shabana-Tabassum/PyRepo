@@ -12,7 +12,7 @@
             Check for Data Types
             Set Relationship between different sheets of an Excel WorkBook
             Build Charts 
-            Build Dash Board for Interactive Analysis of Data between Charts
+            Build Dash Board for Interactive Analysis of Data between Visuals
 
         Musical Analysis of Data from Spotify 
         Source of the Data set is https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset.
