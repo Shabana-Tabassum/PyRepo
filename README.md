@@ -4,7 +4,8 @@
 
    Excel
 
-        Data interpretation using Excel features like Functions, Vloop UP, Pivot Tables and Charts.        
+        Data interpretation using Excel features like Functions, Vloop UP, Pivot Tables and Charts.
+        Bike_Sales_Visualizations_Lab - Shabana.xlsx
       
    Tableau Data Visualization
 
@@ -24,6 +25,9 @@
         Global Health Insights - Data collected By NHS
         This Visual gives you a complete analysis of Health issues based on Population, BMI, Total Cancer cases recorded globally. 
         Select each country to get the data all in one screen. 
+
+        UK Employment Dataset -
+        Report of UK Industries and Sub Industries and Jobs per City.
         
 
    Power BI Data Visualization
@@ -31,7 +35,10 @@
         The Data is imported from Sales Dataset.xlsx. The Sheets in the work book are viewed in Table view in Power BI Query Editor.
         The Data is filtered and Visuals are created.
         Report of Sales Dataset has Sales Data Analysis Region, Category Wise using Geographical Map on screen and Hierarchy features to visualize Data Monthly, Quarterly, Yearly.
+        Sales Dataset.pbix
+        
         Report of Countries hit by Earthquakes and the Magnitude of it from year 2020 to 2025.
+        earthquake.pbix
         
    Python Data Visualization
 
