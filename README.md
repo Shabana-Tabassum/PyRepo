@@ -15,8 +15,7 @@
             Build Charts 
             Build Dash Board for Interactive Analysis of Data between Visuals
 
-        Musical Analysis of Data from Spotify 
-        Source of the Data set is https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset.
+        Musical Analysis of Data from Spotify        
         Download the Data Set and import in Tableau
     
         An analysis of different Genre and Popular Tracks of Artists
