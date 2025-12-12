@@ -32,7 +32,8 @@
 
    Power BI Data Visualization
 
-        The Data is imported from Sales Dataset.xlsx. The Sheets in the work book are viewed in Table view in Power BI Query Editor.
+        The Data is imported from Sales Dataset.xlsx. 
+        The Sheets in the work book are viewed in Table view in Power BI Query Editor.
         The Data is filtered and Visuals are created.
         Report of Sales Dataset has Sales Data Analysis Region, Category Wise using Geographical Map on screen
         and Hierarchy features to visualize Data Monthly, Quarterly, Yearly.
