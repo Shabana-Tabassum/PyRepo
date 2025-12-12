@@ -23,7 +23,8 @@
         https://public.tableau.com/app/profile/shabana.tab/viz/MusicalPerformanceHubDashboard/MusicalAnalysis-Live?publish=yes
     
         Global Health Insights - Data collected By NHS
-        This Visual gives you a complete analysis of Health issues based on Population, BMI, Total Cancer cases recorded globally. 
+        This Visual gives you a complete analysis of Health issues based on 
+        Population, BMI, Total Cancer cases recorded globally. 
         Select each country to get the data all in one screen. 
 
         UK Employment Dataset -
