@@ -20,7 +20,8 @@
         Download the Data Set and import in Tableau
     
         An analysis of different Genre and Popular Tracks of Artists
-        https://public.tableau.com/app/profile/shabana.tab/viz/MusicalPerformanceHubDashboard/MusicalAnalysis-Live?publish=yes
+        https://public.tableau.com/app/profile/shabana.tab/viz/
+        MusicalPerformanceHubDashboard/MusicalAnalysis-Live?publish=yes
     
         Global Health Insights - Data collected By NHS
         This Visual gives you a complete analysis of Health issues based on 
@@ -45,7 +46,8 @@
         
    Python Data Visualization
 
-        Jupyter Book is used to Run Queries and the charts are built using Python Matlab, Pandas, Seaborn Libraries.
+        Jupyter Book is used to Run Queries and the charts are built using Python Matlab, 
+        Pandas, Seaborn Libraries.
         
         Python_GDP_Regions.ipynb
         Data Visualization has been created for GDP Analysis by UN_Regions.
