@@ -26,6 +26,7 @@
         This Visual gives you a complete analysis of Health issues based on 
         Population, BMI, Total Cancer cases recorded globally. 
         Select each country to get the data all in one screen. 
+        GapMinderHealthtry.twb
 
         UK Employment Dataset -
         Report of UK Industries and Sub Industries and Jobs per City.
