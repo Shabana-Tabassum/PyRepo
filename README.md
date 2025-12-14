@@ -51,6 +51,7 @@
 
    SQL
       
-        Connect to NorthwindDatabase. Run SQL queries for Joining Tables, Merging Data between two tables.
+        Connect to NorthwindDatabase. Run SQL queries for Joining Tables, 
+        Merging Data between two tables.
         
        
